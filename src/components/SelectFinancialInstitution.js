@@ -8,7 +8,7 @@ import { ModalWithTransition } from './ModalBodyWithTransition'
 
 function SelectFinancialInstitution(props) {
   return (
-    <div className="bg-muney-100 rounded-custom px-7.5 pt-10 pb-36 overflow-hidden shadow-xl transform transition-all sm:max-w-sm sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+    <div className="bg-muney-100 rounded-custom px-7.5 pt-10 pb-8 sm:pb-36 overflow-hidden shadow-xl transform transition-all sm:max-w-sm sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
       <div>
         <div onClick={props.prev} className="flex items-center justify-center h-8 w-8 bg-neutral-900 rounded-full" role="button" aria-label="go back">
           <svg className="w-5 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -16,7 +16,7 @@ function SelectFinancialInstitution(props) {
           </svg>
         </div>
         <div className="mt-7 text-left sm:mt-8">
-          <h3 className="text-4xl leading-10 font-black text-neutral-900" id="modal-headline">
+          <h3 className="sm:text-4xl text-3xl leading-7 sm:leading-10 font-black text-neutral-900" id="modal-headline">
             Select a financial <br/>institution <img src={BankIcon} alt="bank icon" className="inline-block w-10 h-10" />
           </h3>
         </div>
@@ -36,13 +36,13 @@ function SelectFinancialInstitution(props) {
       <div className="mt-8 pb-12">
         <div className="flex -mx-3">
           <div className="w-1/2 px-3">
-            <div onClick={props.next} className="flex items-center justify-center w-full rounded-btn bg-gtbank bg-opacity-20 py-10" role="button" aria-label="Select bank">
+            <div onClick={props.next} className="flex items-center justify-center w-full rounded-btn bg-gtbank bg-opacity-20 sm:py-10 py-6" role="button" aria-label="Select bank">
               <img src={GtbankLogo} alt="Guaranty trust bank logo" className="rounded-btn w-16 h-16"/>
             </div>
           </div>
 
           <div className="w-1/2 px-3">
-            <div className="flex items-center justify-center w-full rounded-btn bg-polaris bg-opacity-20 py-10">
+            <div className="flex items-center justify-center w-full rounded-btn bg-polaris bg-opacity-20 sm:py-10 py-6">
               <img src={PolarisBankLogo} alt="Polaris bank logo" className="rounded-btn w-16 h-16"/>
             </div>
           </div>
@@ -50,7 +50,7 @@ function SelectFinancialInstitution(props) {
 
         <div className="flex -mx-3 mt-6">
           <div className="w-1/2 px-3">
-            <div className="flex items-center justify-center w-full rounded-btn bg-cowrywise bg-opacity-20 py-10">
+            <div className="flex items-center justify-center w-full rounded-btn bg-cowrywise bg-opacity-20 sm:py-10 py-6">
               <div className="bg-cowrybule w-16 h-16 rounded-btn flex items-center justify-center">
                 <CowrywiseLogo className="w-8 h-8" />
               </div>
@@ -58,7 +58,7 @@ function SelectFinancialInstitution(props) {
           </div>
 
           <div className="w-1/2 px-3">
-            <div className="flex items-center justify-center w-full rounded-btn bg-piggy bg-opacity-20 py-10">
+            <div className="flex items-center justify-center w-full rounded-btn bg-piggy bg-opacity-20 sm:py-10 py-6">
               <div className="bg-piggy w-16 h-16 rounded-btn flex items-center justify-center">
                 <PiggyvestLogo className="w-8 h-8" />
               </div>

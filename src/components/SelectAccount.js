@@ -4,22 +4,22 @@ import { ModalWithTransition } from './ModalBodyWithTransition'
 
 function SelectAccount(props) {
   return (
-    <div className="bg-muney-100 rounded-custom overflow-y-auto px-7.5 pt-6 sm:pt-10 pb-8 md:pb-36 shadow-xl transform transition-all sm:max-w-sm sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+    <div className="bg-muney-100 rounded-custom px-7.5 pt-0 sm:pt-10 pb-8 md:pb-36 shadow-xl transform transition-all sm:max-w-sm sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
       <div>
         <div className="flex items-start justify-start">
           <Logo className="h-24 w-24" />
         </div>
         <div className="mt-4 text-left sm:mt-5">
-          <h3 className="text-4xl leading-10 font-black text-neutral-900" id="modal-headline">
+          <h3 className="sm:text-4xl text-3xl leading-7 sm:leading-10 font-black text-neutral-900" id="modal-headline">
             Muney links all <br/>your finance apps
           </h3>
-          <div className="mt-5">
+          <div className="sm:mt-5 mt-2">
             <p className="text-base leading-5 text-neutral-900 opacity-50 font-medium">
               Click "Select Account" to continue.
             </p>
           </div>
         </div>
-        <div className="bg-muney-200 rounded-btn mt-12 px-4 py-7.5">
+        <div className="bg-muney-200 rounded-btn sm:mt-12 mt-8 px-4 sm:py-7.5 py-5">
           <ul>
             <li>
               <div className="flex flex-row items-center">

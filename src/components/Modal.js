@@ -27,7 +27,7 @@ function Modal({show, close}){
   }
 
   return (
-    <div className="fixed max-h-screen overflow-y-auto bottom-0 inset-x-0 px-1 pb-2 pt-40 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
+    <div className="fixed max-h-screen overflow-y-auto bottom-0 inset-x-0 px-1 pb-2 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
       <Transition show={show} {...{
         enter: "ease-out duration-300",
         enterFrom: "opacity-0",
